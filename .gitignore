@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.terraform/
+*.tfstate*
+*.tfplan
+terraform.tfvars
+.env
+*credentials*.json

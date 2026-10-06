@@ -1,0 +1,17 @@
+services:
+  guardrail:
+    build: .
+    image: bq-guardrail
+    env_file:
+      - .env
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /tmp/adc.json
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - type: bind
+        source: "${ADC_CREDENTIALS_PATH:-${APPDATA}/gcloud/application_default_credentials.json}"
+        target: /tmp/adc.json
+        read_only: true
+        bind:
+          create_host_path: false

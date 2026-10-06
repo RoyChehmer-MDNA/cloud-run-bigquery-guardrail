@@ -1,0 +1,8 @@
+project_id                  = "YOUR_PROJECT_ID"
+data_project_id             = "YOUR_DATA_PROJECT_ID"
+semantic_dataset           = "semantic_layer"
+region                     = "europe-west1"
+bq_location                = "EU"
+image                      = "europe-west1-docker.pkg.dev/YOUR_PROJECT_ID/guardrail/service:initial"
+agent_service_account_email = "adk-agent@YOUR_PROJECT_ID.iam.gserviceaccount.com"
+deployer_member            = "user:you@example.com"
